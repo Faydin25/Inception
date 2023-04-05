@@ -1,0 +1,5 @@
+CREATE DATABASE IF NOT EXISTS wordpress;
+CREATE USER IF NOT EXISTS 'faydin'@'%' IDENTIFIED BY 'force99';
+GRANT ALL PRIVILEGES ON wordpress.* TO 'faydin'@'%';
+FLUSH PRIVILEGES;
+ALTER USER 'root'@'localhost' IDENTIFIED BY 'rootforce99';
